@@ -14,7 +14,7 @@ fi
 VER=$1
 
 # prepare fresh directories
-rm -rv tmp/
+[ -d tmp ] && rm -rv tmp/
 mkdir -p tmp/DEBIAN/
 
 # changelog
